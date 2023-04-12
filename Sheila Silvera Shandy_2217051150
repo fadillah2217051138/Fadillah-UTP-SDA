@@ -1,0 +1,78 @@
+elif pilihan == "1" :
+            tas_dipilih = "Tas totebag"
+            jumlah_tas = int(input("Berapa banyak tas yang ingin Anda beli? "))
+            total_harga = harga[0]*jumlah_tas
+            
+            uang=int(input("masukkan uang kamu :"))
+            if uang>=total_harga :
+                print("==================================")
+                print("\tStruk Penjualan Tas ")
+                print("Model Tas  :", tas_dipilih)
+                print("Jumlah     :", jumlah_tas)
+                print("Total harga:", total_harga)
+                kembalian=uang-total_harga
+                print("Kembalian  :", kembalian)
+                print("==================================")
+                ulang=input("Apakah anda ingin mengulang lagi : ")
+                if ulang == "y" or ulang == "Y" :
+                    sda()
+                else :
+                    print("Terima kasih telah berkunjung di toko kami")
+                    jalan=False
+                    break
+            elif uang<total_harga :
+                print("Mohon maaf saldo anda kurang ")
+                sys.exit(0)
+
+        
+        elif pilihan == "2" :
+            tas_dipilih = "Tas slingbag"
+            jumlah_tas = int(input("Berapa banyak tas yang ingin Anda beli? "))
+            total_harga = harga[1]*jumlah_tas
+            
+            uang=int(input("masukkan uang kamu :"))
+            if uang>=total_harga :
+                print("==================================")
+                print("\tStruk Penjualan Tas ")
+                print("Model Tas  :", tas_dipilih)
+                print("Jumlah     :", jumlah_tas)
+                print("Total harga:", total_harga)
+                kembalian=uang-total_harga
+                print("Kembalian  :", kembalian)
+                print("==================================")
+                ulang=input("Apakah anda ingin mengulang lagi : ")
+                if ulang == "y" or ulang == "Y" :
+                    sda()
+                else :
+                    print("Terima kasih telah berkunjung di toko kami")
+                    jalan=False
+                    break
+            elif uang<total_harga :
+                print("Mohon maaf saldo anda kurang ")
+                sys.exit(0)
+        
+        elif pilihan == "3" :
+            tas_dipilih = "Tas backpack"
+            jumlah_tas = int(input("Berapa banyak tas yang ingin Anda beli? "))
+            total_harga = harga[2]*jumlah_tas
+            
+            uang=int(input("masukkan uang kamu :"))
+            if uang>=total_harga :
+                print("==================================")
+                print("\tStruk Penjualan Tas ")
+                print("Model Tas  :", tas_dipilih)
+                print("Jumlah     :", jumlah_tas)
+                print("Total harga:", total_harga)
+                kembalian=uang-total_harga
+                print("Kembalian  :", kembalian)
+                print("==================================")
+                ulang=input("Apakah anda ingin mengulang lagi : ")
+                if ulang =="y" or "Y" :
+                    sda()
+                else :
+                    print("Terima kasih telah berkunjung di toko kami")
+                    jalan=False
+                    break
+            elif uang<total_harga :
+                print("Mohon maaf saldo anda kurang ")
+                sys.exit(0)

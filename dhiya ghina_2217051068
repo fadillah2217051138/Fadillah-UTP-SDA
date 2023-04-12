@@ -25,7 +25,7 @@
                 sys.exit(0)
                 
         elif pilihan == "5" :
-            tas_dipilih = "Tas backpack"
+            tas_dipilih = "Koper 24 inch"
             jumlah_tas = int(input("Berapa banyak tas yang ingin Anda beli? "))
             total_harga = harga[4]*jumlah_tas
             

@@ -1,0 +1,56 @@
+               
+        elif pilihan == "4" :
+            tas_dipilih = "Koper 18 Inch"
+            jumlah_tas = int(input("Berapa banyak tas yang ingin Anda beli? "))
+            total_harga = harga[3]*jumlah_tas
+            
+            uang=int(input("masukkan uang kamu :"))
+            if uang>=total_harga :
+                print("==================================")
+                print("\tStruk Penjualan Tas ")
+                print("Model Tas  :", tas_dipilih)
+                print("Jumlah     :", jumlah_tas)
+                print("Total harga:", total_harga)
+                kembalian=uang-total_harga
+                print("Kembalian  :", kembalian)
+                print("==================================")
+                ulang=input("Apakah anda ingin mengulang lagi : ")
+                if ulang =="y" or ulang == "Y" :
+                    sda()
+                else :
+                    input("Terima kasih telah berkunjung di toko kami")
+                    
+            elif uang<total_harga :
+                print("Mohon maaf saldo anda kurang ")
+                sys.exit(0)
+                
+        elif pilihan == "5" :
+            tas_dipilih = "Tas backpack"
+            jumlah_tas = int(input("Berapa banyak tas yang ingin Anda beli? "))
+            total_harga = harga[4]*jumlah_tas
+            
+            uang=int(input("masukkan uang kamu :"))
+            if uang>=total_harga :
+                print("==================================")
+                print("\tStruk Penjualan Tas ")
+                print("Model Tas  :", tas_dipilih)
+                print("Jumlah     :", jumlah_tas)
+                print("Total harga:", total_harga)
+                kembalian=uang-total_harga
+                print("Kembalian  :", kembalian)
+                print("==================================")
+                ulang=input("Apakah anda ingin mengulang lagi : ")
+                if ulang =="y" or ulang == "Y":
+                    sda()
+                else :
+                    print("Terima kasih telah berkunjung di toko kami")
+                    jalan=False
+                    break
+            elif uang<total_harga :
+                print("Mohon maaf saldo anda kurang ")
+        
+        else:
+            print("Mohon masukkan nomor yang valid.")
+            sda()
+    
+sda()
